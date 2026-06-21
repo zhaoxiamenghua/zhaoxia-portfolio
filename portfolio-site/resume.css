@@ -239,6 +239,28 @@ h4 {
   font-size: 13px;
 }
 
+.ai-disclosure {
+  width: min(980px, calc(100% - 28px));
+  margin: 10px auto 42px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(24, 22, 18, 0.16);
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ai-disclosure strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--red);
+}
+
+.ai-disclosure p {
+  max-width: 820px;
+  margin: 0;
+}
+
 @media print {
   body {
     background: white;
