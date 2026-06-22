@@ -39,10 +39,9 @@ body {
   background-size: 28px 28px;
 }
 
-.photo-box {
+.resume-photo {
   min-height: 132px;
   display: grid;
-  place-items: center;
   align-content: center;
   gap: 8px;
   margin-bottom: 28px;
@@ -51,18 +50,21 @@ body {
     linear-gradient(135deg, transparent 49.4%, rgba(24, 22, 18, 0.15) 50%, transparent 50.6%),
     linear-gradient(45deg, transparent 49.4%, rgba(24, 22, 18, 0.15) 50%, transparent 50.6%),
     #faf8f1;
+  color: var(--muted);
 }
 
-.photo-box span {
+.resume-photo strong {
   font-family: Arial, sans-serif;
-  color: var(--muted);
+  color: var(--red);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0;
 }
 
-.photo-box small {
+.resume-photo p {
+  margin: 0;
   color: var(--muted);
+  font-size: 13px;
 }
 
 h1 {
