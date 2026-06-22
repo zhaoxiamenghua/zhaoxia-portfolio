@@ -594,6 +594,65 @@ blockquote {
   margin-top: 16px;
 }
 
+.version-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px 18px;
+  margin-top: 30px;
+}
+
+.version-sheet {
+  margin: 0;
+  padding: 10px 10px 22px;
+  border: 1px solid var(--color-line);
+  background: rgba(243, 240, 232, 0.68);
+}
+
+.version-sheet:nth-child(even) {
+  transform: translateY(18px);
+}
+
+.version-sheet img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid var(--color-line);
+  filter: saturate(0.72) contrast(0.94);
+}
+
+.version-sheet figcaption {
+  padding: 18px 10px 0;
+}
+
+.version-sheet figcaption > span {
+  color: var(--color-accent);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.version-sheet h3 {
+  margin: 9px 0 10px;
+}
+
+.version-sheet p {
+  margin-bottom: 14px;
+}
+
+.version-sheet a {
+  color: var(--color-accent);
+  border-bottom: 1px solid currentColor;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.version-sheet a:hover {
+  color: var(--color-text-main);
+  opacity: 0.72;
+}
+
 .resume-entry {
   display: flex;
   align-items: center;
@@ -981,9 +1040,14 @@ blockquote {
   .placeholder-grid,
   .sample-grid,
   .evidence-grid,
+  .version-gallery,
   .framework-flow,
   .path-grid {
     grid-template-columns: 1fr;
+  }
+
+  .version-sheet:nth-child(even) {
+    transform: none;
   }
 
   .framework-flow article {
