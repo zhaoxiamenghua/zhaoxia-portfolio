@@ -21,11 +21,11 @@
         <p class="project-label">PROJECT 05 / META CASE / AI WORKFLOW</p>
         <h1>AI 协作作品集生产系统｜这个网站是如何被整理、生成和迭代出来的</h1>
         <p class="project-lead">
-          这个页面放在作品集最后，用来复盘本网站本身的生产过程。
+          这个网站不是从一份完整方案开始的。它最初只有分散的文章、项目文档、图像、观察记录和几种互相竞争的表达方向。
           <br /><br />
-          我用 Obsidian 整理长期材料和项目笔记，用 ChatGPT 梳理结构、重写文案、判断项目关系，用 Codex 协助网页代码生成与修改，用 GitHub 管理文件、版本和网页部署。
+          我先判断哪些内容真实发生过、哪些材料彼此相关、哪些项目应该合并或删除，再借助 Obsidian、ChatGPT、Codex 和 GitHub 把这些判断推进成可以阅读和持续修改的网站。
           <br /><br />
-          AI 没有替我决定这个网站要说什么。它参与的是整理、扩写、改写、代码生成和问题定位；真正决定项目顺序、材料取舍、叙述语气和最终呈现的，仍然是我自己。
+          AI 参与整理、改写、代码生成和问题定位，但没有替我决定方向。项目顺序、材料取舍、叙述语气和最终呈现，来自我对每一轮页面的重新阅读和复核。
         </p>
         <dl class="project-meta">
           <div><dt>项目类型</dt><dd>AI 协作工作流 / 网站生产复盘 / 内容系统搭建</dd></div>
@@ -50,15 +50,61 @@
         </p>
       </section>
 
+      <section class="project-section">
+        <p class="section-kicker">SOURCE MATERIALS</p>
+        <h2>这次网站整理了哪些材料</h2>
+        <p>
+          网站搭建之前，材料并没有天然形成清楚的项目结构。它们散落在文档、笔记、图片文件夹、设计稿和已经发布的内容里。第一步不是生成页面，而是确认每类材料在网站中承担什么作用。
+        </p>
+        <div class="evidence-grid">
+          <article class="evidence-card">
+            <span>01 / WRITING</span>
+            <h3>长期写作与公开文章</h3>
+            <p>《思感集》、微信公众号文章、朋友圈文字和零散笔记。它们构成网站的观点来源与语言基础。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>02 / PROJECTS</span>
+            <h3>已经发生的项目</h3>
+            <p>IMXS、《坠落静默》、被单人、生命展与《越过珊丘》。整理重点是区分真实职责、过程材料与最终产出。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>03 / VISUALS</span>
+            <h3>图像与设计文件</h3>
+            <p>AI 生成图、分镜、模型、展览物料、项目截图和视觉参考，用来支撑文字叙述，而不是代替项目说明。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>04 / RESEARCH</span>
+            <h3>观察与资料库</h3>
+            <p>城市经验、用户体验观察、心理与艺术治疗资料、产品设计资料。它们被保留为项目开始之前的材料来源。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>05 / CAREER</span>
+            <h3>简历与投递信息</h3>
+            <p>岗位描述、个人经历、技能和项目结果用于确认阅读重点，但不再直接支配每一段文案的语气。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>06 / PROCESS</span>
+            <h3>修改记录与协作指令</h3>
+            <p>ChatGPT 对话结论、Codex 指令、版本提交和网页检查结果，构成这个制作复盘可以被追溯的过程证据。</p>
+          </article>
+        </div>
+      </section>
+
       <section class="project-section dark">
         <p class="section-kicker">WORKFLOW</p>
         <h2>从材料到网页的协作流程</h2>
         <ol class="flow-list">
-          <li><span>01</span>长期材料整理：在 Obsidian 和文档中整理思感集、项目经历、图像材料和求职方向。</li>
-          <li><span>02</span>结构判断：用 ChatGPT 反复讨论网站定位、项目顺序、主次关系和叙述语气。</li>
-          <li><span>03</span>页面生成：将确定后的结构整理成 Codex 指令，生成或修改 HTML / CSS 页面。</li>
-          <li><span>04</span>版本管理：通过 GitHub 保存代码、检查文件路径、管理页面版本和部署。</li>
-          <li><span>05</span>人工复核：重新阅读网页，发现文案过度讨好、项目残留、链接缺失等问题，再继续修改。</li>
+          <li><span>01</span>材料盘点：确认文章、项目、图片、研究资料和简历信息分别来自哪里，哪些内容有公开证据。</li>
+          <li><span>02</span>真实性筛选：区分持续完成的项目、辅助材料和仍停留在设想阶段的内容，删除不适合作为主项目的部分。</li>
+          <li><span>03</span>关系重组：判断《思感集》、AI 生成内容、展览体验和观察档案之间的上下游关系，重新安排阅读顺序。</li>
+          <li><span>04</span>页面实现：把已经确认的结构写成修改指令，由 Codex 协助生成或调整 HTML / CSS、链接和页面导航。</li>
+          <li><span>05</span>发布管理：通过 GitHub 保存每轮修改并部署到 GitHub Pages，让页面进入真实的公开阅读环境。</li>
+          <li><span>06</span>阅读复核：在桌面、手机和线上页面重新检查语气、结构、链接、残留内容与响应式显示，再进入下一轮修改。</li>
         </ol>
       </section>
 
@@ -305,6 +351,42 @@
       </section>
 
       <section class="project-section">
+        <p class="section-kicker">KEY DECISIONS</p>
+        <h2>这次迭代中最重要的几个判断</h2>
+        <div class="evidence-grid">
+          <article class="evidence-card">
+            <span>01</span>
+            <h3>真实比完整更重要</h3>
+            <p>不是材料越多，作品集就越完整。尚未持续完成的 AI 样稿被删除，已经发生并能说明过程的内容被保留下来。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>02</span>
+            <h3>先找到来源，再决定形式</h3>
+            <p>公众号文章、原创叙事和情绪 IP 不是彼此孤立的成果。先找到它们与《思感集》和长期观察的关系，页面结构才开始稳定。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>03</span>
+            <h3>删除也是内容生产</h3>
+            <p>移除重复项目、错误归类和过度包装，不是减少工作量，而是在建立更清楚的边界，让每个栏目只承担一种主要作用。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>04</span>
+            <h3>AI 输出始终是待处理材料</h3>
+            <p>结构建议、改写文本和网页代码都需要重新阅读。是否采用、如何修改、放在什么位置，不能由生成结果自动决定。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>05</span>
+            <h3>发布不是最后一步</h3>
+            <p>页面上线后仍要检查真实链接、移动端显示和线上缓存。公开页面带来的阅读距离，会继续暴露本地编辑时看不到的问题。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section">
         <p class="section-kicker">OUTPUT</p>
         <h2>这个栏目留下了什么</h2>
         <div class="evidence-grid">
@@ -329,7 +411,7 @@
           <article class="evidence-card">
             <span>04</span>
             <h3>一次真实 AI 协作经验</h3>
-            <p>我不是只使用 AI 生成结果，而是在一个完整项目中使用 AI 辅助判断、整理、生成、修正和发布。</p>
+            <p>我不是只接收 AI 生成结果，而是在一个完整项目中持续整理输入、修改输出、复核页面并承担最后的取舍。</p>
           </article>
         </div>
       </section>
@@ -345,6 +427,9 @@
         </p>
         <p>
           但它并不替我决定方向。哪些内容要保留，哪些项目要合并，哪些文案显得过度包装，哪些表达更接近我自己，这些仍然需要我反复阅读和判断。
+        </p>
+        <p class="quote-line">
+          这不是一次简单网页搭建，而是一次完整的内容系统整理。
         </p>
       </section>
 
