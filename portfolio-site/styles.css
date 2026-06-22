@@ -529,6 +529,41 @@ blockquote {
   color: inherit;
 }
 
+.evidence-media {
+  margin: 0;
+  border: 1px solid var(--color-line);
+  background: rgba(250, 248, 242, 0.5);
+}
+
+.evidence-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.evidence-media.document img {
+  object-fit: contain;
+  background: #f7f5ef;
+}
+
+.evidence-media figcaption {
+  padding: 12px 14px 14px;
+  color: var(--color-text-muted);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dark .evidence-media {
+  border-color: var(--color-line-dark);
+  background: rgba(250, 248, 242, 0.05);
+}
+
+.dark .evidence-media figcaption {
+  color: rgba(250, 248, 242, 0.72);
+}
+
 .dark .evidence-placeholder {
   border-color: var(--color-line-dark);
   background:
@@ -633,6 +668,55 @@ blockquote {
   font-weight: 600;
 }
 
+.theme-note {
+  max-width: 760px;
+  margin: 18px 0 24px;
+  color: var(--color-text-muted);
+  line-height: 1.9;
+}
+
+.theme-tags {
+  margin: 18px 0 32px;
+}
+
+.theme-grid {
+  margin-top: 24px;
+}
+
+.article-page {
+  width: min(var(--max), calc(100% - 28px));
+  margin: 22px auto 64px;
+}
+
+.article-body {
+  padding: clamp(30px, 6vw, 76px);
+  background: var(--color-paper-light);
+  border: 1px solid var(--color-line);
+}
+
+.article-body > h1 {
+  max-width: 900px;
+  margin-bottom: 18px;
+  font-size: clamp(42px, 7vw, 86px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+.article-body .project-section {
+  width: 100%;
+  margin-inline: 0;
+}
+
+.article-text {
+  max-width: 760px;
+}
+
+.article-text p {
+  margin-bottom: 1.35em;
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 2;
+}
+
 .evidence-card .inline-link,
 .path-card .inline-link,
 .sample-card .inline-link {
@@ -653,6 +737,14 @@ blockquote {
   padding: 18px;
   border: 1px solid var(--color-line);
   background: rgba(250, 248, 242, 0.36);
+}
+
+.version-sheet > .evidence-media img {
+  height: 100%;
+  min-height: 220px;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: top;
 }
 
 .version-sheet figcaption {
@@ -1083,6 +1175,12 @@ blockquote {
   .subtle-link {
     margin-left: 0;
   }
+
+  .evidence-card .inline-link,
+  .sample-card .inline-link,
+  .article-card .inline-link {
+    margin-right: 14px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1131,6 +1229,14 @@ blockquote {
 
   .section,
   .project-section {
+    padding: 28px 20px;
+  }
+
+  .article-page {
+    width: min(100% - 24px, var(--max));
+  }
+
+  .article-body {
     padding: 28px 20px;
   }
 
