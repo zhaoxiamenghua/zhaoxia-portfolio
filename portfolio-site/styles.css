@@ -567,10 +567,25 @@ blockquote {
 }
 
 .inline-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
   color: var(--color-accent);
   border-bottom: 1px solid currentColor;
   font-family: var(--sans);
+  font-size: 14px;
   font-weight: 800;
+}
+
+.inline-link:hover {
+  color: var(--color-text-main);
+  opacity: 0.72;
+}
+
+.evidence-card .inline-link,
+.path-card .inline-link,
+.sample-card .inline-link {
+  margin-top: 16px;
 }
 
 .resume-entry {
@@ -701,6 +716,7 @@ blockquote {
 }
 
 .project-section {
+  scroll-margin-top: 104px;
   margin-top: 22px;
   padding: clamp(30px, 5vw, 70px);
   background: var(--color-paper-light);
