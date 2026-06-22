@@ -665,12 +665,22 @@ blockquote {
 
 .resume-entry h2 {
   max-width: 790px;
-  margin-bottom: 0;
+  margin-bottom: 12px;
   font-family: var(--sans);
   font-size: clamp(28px, 4.8vw, 68px);
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.04em;
+}
+
+.resume-entry-copy {
+  max-width: 820px;
+}
+
+.resume-entry-copy > p:last-child {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: rgba(250, 248, 242, 0.68);
 }
 
 .site-footer {
