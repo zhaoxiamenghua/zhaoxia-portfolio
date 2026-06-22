@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI 行业内容选题与样稿 | 朝夏作品集</title>
+    <title>AI 协作作品集生产系统 | 朝夏作品集</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="project-page">
@@ -11,233 +11,190 @@
       <a class="brand" href="../index.html">朝夏</a>
       <nav aria-label="项目导航">
         <a href="../index.html#projects">项目入口</a>
-        <a href="./thinking-system.html">上一项目</a>
-        <a href="./ai-visual-production.html">下一项目</a>
+        <a href="./archive.html">上一项目</a>
         <a href="../resume.html">简历</a>
       </nav>
     </header>
 
     <main>
-      <section class="project-hero" data-bg="AI TOPICS">
-        <p class="project-label">PROJECT 02 / AI TOPIC PLANNING</p>
-        <h1>AI 行业内容选题与样稿｜从信息挖掘到图文表达</h1>
+      <section class="project-hero" data-bg="AI WORKFLOW">
+        <p class="project-label">PROJECT 05 / META CASE / AI WORKFLOW</p>
+        <h1>AI 协作作品集生产系统｜这个网站是如何被整理、生成和迭代出来的</h1>
         <p class="project-lead">
-          这部分是我把长期写作习惯迁移到 AI 行业内容中的一次整理。
+          这个页面放在作品集最后，用来复盘本网站本身的生产过程。
           <br /><br />
-          我关注的不是“AI 很新”这件事本身，而是 AI 进入写作、搜索、创作和工作流之后，人还需要保留哪些判断：选题判断、事实复核、语气控制、标题意识和平台表达。
+          我用 Obsidian 整理长期材料和项目笔记，用 ChatGPT 梳理结构、重写文案、判断项目关系，用 Codex 协助网页代码生成与修改，用 GitHub 管理文件、版本和网页部署。
+          <br /><br />
+          AI 没有替我决定这个网站要说什么。它参与的是整理、扩写、改写、代码生成和问题定位；真正决定项目顺序、材料取舍、叙述语气和最终呈现的，仍然是我自己。
         </p>
         <dl class="project-meta">
-          <div><dt>项目类型</dt><dd>AI 行业图文选题 / 样稿设计</dd></div>
-          <div><dt>我做的事</dt><dd>行业信息挖掘、观点提炼、产品评测、图文策划</dd></div>
-          <div><dt>使用工具</dt><dd>ChatGPT / Claude / DeepSeek / 资料检索 / 内容框架</dd></div>
-          <div><dt>最终产出</dt><dd>20 个选题、3 组样稿结构、AI 辅助写作流程</dd></div>
-          <div><dt>我的职责</dt><dd>选题分类、内容结构、标题判断、人工复核</dd></div>
-          <div><dt>阅读建议</dt><dd>先看选题库，再看三类样稿</dd></div>
+          <div><dt>项目类型</dt><dd>AI 协作工作流 / 网站生产复盘 / 内容系统搭建</dd></div>
+          <div><dt>使用工具</dt><dd>ChatGPT / Codex / GitHub / Obsidian / GitHub Pages</dd></div>
+          <div><dt>最终产出</dt><dd>作品集网站、项目结构、页面文案、Codex 指令、版本迭代记录</dd></div>
+          <div><dt>我的职责</dt><dd>材料整理、方向判断、结构决策、文案取舍、AI 输出复核、最终发布</dd></div>
+          <div><dt>阅读建议</dt><dd>作为全站最后的制作说明阅读</dd></div>
         </dl>
       </section>
 
       <section class="project-section">
-        <p class="section-kicker">TOPIC LIBRARY</p>
-        <h2>20 个 AI 内容选题</h2>
-        <ol class="topic-list">
-          <li><a class="inline-link" href="#sample-ai-model-writing">ChatGPT、Claude、DeepSeek：谁更适合辅助长文写作？</a></li>
-          <li><a class="inline-link" href="#sample-ai-search">AI 搜索会取代传统搜索吗？一次真实使用场景对比。</a></li>
-          <li><a class="inline-link" href="#sample-ai-workflow">从提示词到工作流：普通人如何建立自己的 AI 助手？</a></li>
-          <li>AI Agent 为什么会成为下一阶段内容工具？</li>
-          <li>为什么“会执行”的 AI 比“会聊天”的 AI 更重要？</li>
-          <li>当 AI 可以帮你写标题，人还需要判断什么？</li>
-          <li>AI 辅助写作最容易产生的三种假流畅。</li>
-          <li>为什么 AI 生成图片容易好看，却不一定好传播？</li>
-          <li>从 Midjourney 到可灵：AI 视频工作流的门槛在哪里？</li>
-          <li>AI 图文账号如何避免变成工具说明书？</li>
-          <li>AI 产品评测不能只比速度，还要比使用场景。</li>
-          <li>如何把一个模糊想法变成可发布图文？</li>
-          <li>AI 对内容创作者最大的帮助不是替写，而是提问。</li>
-          <li>AI 帮你写文案前，你需要先写清楚判断标准。</li>
-          <li>AI 时代，长文还有没有传播价值？</li>
-          <li>AI 工具更新太快，内容账号如何做选题节奏？</li>
-          <li>从模型输出看不同 AI 的语言性格。</li>
-          <li>AI 生成内容如何做人味复核？</li>
-          <li>为什么心理议题适合用 AI 辅助整理，但不能交给 AI 决定？</li>
-          <li>一篇 AI 趋势分析图文需要哪些资料层级？</li>
-        </ol>
+        <p class="section-kicker">WHY LAST</p>
+        <h2>为什么把这个栏目放在最后</h2>
+        <p>
+          这个页面不是为了抢在前面展示工具能力，而是作为整个网站的制作说明。
+        </p>
+        <p>
+          前面的页面先展示我长期写下的材料、已经完成的项目和观察来源；最后再说明这个网站如何被我使用 ChatGPT、Codex、GitHub 和 Obsidian 整理、生成、修改和发布。
+        </p>
+        <p>
+          这样更符合这个作品集的逻辑：先看内容本身，再看它背后的生产方法。
+        </p>
       </section>
 
-      <section id="sample-ai-model-writing" class="project-section dark">
-        <p class="section-kicker">SAMPLE A</p>
-        <h2>AI 产品评测样稿</h2>
-        <p class="quote-line">ChatGPT、Claude、DeepSeek：谁更适合辅助长文写作？</p>
+      <section class="project-section dark">
+        <p class="section-kicker">WORKFLOW</p>
+        <h2>从材料到网页的协作流程</h2>
         <ol class="flow-list">
-          <li><span>01</span>测试任务：同一篇长文主题，要求三个模型分别生成结构和段落。</li>
-          <li><span>02</span>模型输出对比：比较信息完整度、段落推进和观点明确度。</li>
-          <li><span>03</span>语言风格分析：判断谁更适合冷静说明、谁更适合文学表达、谁更容易空泛。</li>
-          <li><span>04</span>观点提炼：看模型能否从材料里抓出可传播的判断句。</li>
-          <li><span>05</span>使用场景：给出适合长文、短图文、标题优化和复盘的使用建议。</li>
-          <li><span>06</span>最终结论：AI 不替代作者，但能帮助作者更快看见结构问题。</li>
+          <li><span>01</span>长期材料整理：在 Obsidian 和文档中整理思感集、项目经历、图像材料和求职方向。</li>
+          <li><span>02</span>结构判断：用 ChatGPT 反复讨论网站定位、项目顺序、主次关系和叙述语气。</li>
+          <li><span>03</span>页面生成：将确定后的结构整理成 Codex 指令，生成或修改 HTML / CSS 页面。</li>
+          <li><span>04</span>版本管理：通过 GitHub 保存代码、检查文件路径、管理页面版本和部署。</li>
+          <li><span>05</span>人工复核：重新阅读网页，发现文案过度讨好、项目残留、链接缺失等问题，再继续修改。</li>
         </ol>
-        <a class="inline-link" href="#sample-ai-model-writing-detail">查看完整样稿 →</a>
-      </section>
-
-      <section id="sample-ai-agent-trend" class="project-section">
-        <p class="section-kicker">SAMPLE B</p>
-        <h2>趋势分析样稿</h2>
-        <p class="quote-line">从“会聊天”到“会执行”：AI Agent 为什么会成为下一阶段内容工具？</p>
-        <div class="two-column">
-          <div>
-            <h3>图文结构</h3>
-            <ol class="flow-list">
-              <li><span>01</span>现象：用户不再只需要回答，而是希望 AI 帮忙完成任务。</li>
-              <li><span>02</span>趋势：从对话式模型转向可调用工具、可执行流程的 Agent。</li>
-              <li><span>03</span>影响：内容创作者可以把选题、资料、草稿和排期拆成可协作任务。</li>
-              <li><span>04</span>机会：媒体账号可以做工具测评、使用场景和效率方法论内容。</li>
-            </ol>
-          </div>
-          <div>
-            <h3>可延展选题</h3>
-            <p>Agent 如何改变选题会？AI 能不能做编辑助理？什么任务适合交给 Agent，什么判断必须由人完成？</p>
-          </div>
-        </div>
-        <a class="inline-link" href="#sample-ai-agent-trend-detail">查看完整样稿 →</a>
-      </section>
-
-      <section id="sample-ai-writing-workflow" class="project-section">
-        <p class="section-kicker">SAMPLE C</p>
-        <h2>AI 辅助内容生产流程</h2>
-        <p class="quote-line">如何用 AI 把一个模糊想法变成一篇可发布图文？</p>
-        <ol class="flow-list">
-          <li><span>01</span>原始想法：先写下不完整但真实的问题。</li>
-          <li><span>02</span>资料收集：整理案例、术语、平台语境和反例。</li>
-          <li><span>03</span>AI 辅助提问：让 AI 帮忙补充角度，而不是直接写成稿。</li>
-          <li><span>04</span>观点提炼：人工筛选最值得表达的判断句。</li>
-          <li><span>05</span>标题优化：测试情绪强度、信息密度和平台点击意图。</li>
-          <li><span>06</span>图文结构：拆成封面、标题页、信息页、观点页、结论页。</li>
-          <li><span>07</span>人工复核：确认事实、语气、立场和传播风险。</li>
-        </ol>
-        <a class="inline-link" href="#sample-ai-writing-workflow-detail">查看完整流程 →</a>
-      </section>
-
-      <section id="sample-ai-search" class="project-section">
-        <p class="section-kicker">TOPIC DETAIL / SEARCH</p>
-        <h2>AI 搜索会取代传统搜索吗？一次真实使用场景对比</h2>
-        <div class="two-column">
-          <div>
-            <h3>测试场景</h3>
-            <p>同一个问题分别交给传统搜索和 AI 搜索处理，观察它们在信息来源、答案整合、追问效率和事实复核上的差异。</p>
-          </div>
-          <div>
-            <h3>内容角度</h3>
-            <p>重点不是判断谁会取代谁，而是说明不同搜索方式适合什么任务，以及人如何继续判断信息是否可靠。</p>
-          </div>
-        </div>
-        <a class="inline-link" href="#sample-ai-model-writing-detail">继续看完整样稿 →</a>
-      </section>
-
-      <section id="sample-ai-workflow" class="project-section">
-        <p class="section-kicker">TOPIC DETAIL / WORKFLOW</p>
-        <h2>从提示词到工作流：普通人如何建立自己的 AI 助手？</h2>
-        <div class="two-column">
-          <div>
-            <h3>选题来源</h3>
-            <p>很多人会写单条提示词，但还没有把重复任务整理成稳定流程。这篇适合从日常写作、资料整理和发布复盘切入。</p>
-          </div>
-          <div>
-            <h3>阅读路径</h3>
-            <p>先解释工作流和提示词的区别，再给出一个从模糊想法到可发布图文的例子。</p>
-          </div>
-        </div>
-        <a class="inline-link" href="#sample-ai-writing-workflow-detail">查看完整流程 →</a>
-      </section>
-
-      <section id="sample-ai-model-writing-detail" class="project-section">
-        <p class="section-kicker">FULL SAMPLE / 01</p>
-        <h2>ChatGPT、Claude、DeepSeek：谁更适合辅助长文写作？</h2>
-        <div class="two-column">
-          <div>
-            <h3>测试任务</h3>
-            <p>给三个模型同一个长文主题，要求它们分别生成文章结构、开头段落和标题备选，再比较它们的结构感、语言风格和人工修改成本。</p>
-          </div>
-          <div>
-            <h3>我的判断</h3>
-            <p>我不把模型输出当成最终稿，而是把它们当成不同的写作助手。真正重要的是看它们暴露了哪些结构问题，以及哪些判断仍然必须由人完成。</p>
-          </div>
-        </div>
-        <ol class="flow-list">
-          <li><span>01</span>ChatGPT：适合快速搭结构，逻辑推进稳定，但容易显得标准化。</li>
-          <li><span>02</span>Claude：适合长文本语气和段落润色，但需要人工压缩重点。</li>
-          <li><span>03</span>DeepSeek：中文框架生成效率高，适合做初稿和信息压缩。</li>
-          <li><span>04</span>人工复核：最终要重新判断标题、观点密度、事实准确性和平台语气。</li>
-        </ol>
-        <a class="inline-link" href="#sample-ai-model-writing">回到样稿 A ↑</a>
-      </section>
-
-      <section id="sample-ai-agent-trend-detail" class="project-section">
-        <p class="section-kicker">FULL SAMPLE / 02</p>
-        <h2>从“会聊天”到“会执行”：AI Agent 为什么会成为下一阶段内容工具？</h2>
-        <div class="two-column">
-          <div>
-            <h3>选题来源</h3>
-            <p>很多人使用 AI 时，已经不满足于“给我一个回答”，而是希望它能帮忙完成一组任务。这个变化让 Agent 成为很适合持续观察的内容方向。</p>
-          </div>
-          <div>
-            <h3>图文方向</h3>
-            <p>这篇更适合做成解释型图文：先解释 Agent 和普通聊天机器人的区别，再给出内容创作者可以使用的场景。</p>
-          </div>
-        </div>
-        <ol class="flow-list">
-          <li><span>01</span>第一页：为什么大家开始不满足于聊天式 AI？</li>
-          <li><span>02</span>第二页：Agent 的核心变化是“能执行任务”。</li>
-          <li><span>03</span>第三页：它对内容创作者意味着什么。</li>
-          <li><span>04</span>第四页：哪些任务可以交给 Agent，哪些判断不能。</li>
-        </ol>
-        <a class="inline-link" href="#sample-ai-agent-trend">回到样稿 B ↑</a>
-      </section>
-
-      <section id="sample-ai-writing-workflow-detail" class="project-section">
-        <p class="section-kicker">FULL SAMPLE / 03</p>
-        <h2>如何用 AI 把一个模糊想法变成一篇可发布图文？</h2>
-        <div class="two-column">
-          <div>
-            <h3>流程定位</h3>
-            <p>这不是让 AI 直接写文章，而是把 AI 放进内容生产流程中：它负责帮我扩展问题、整理角度和发现遗漏，人负责判断方向。</p>
-          </div>
-          <div>
-            <h3>适合平台</h3>
-            <p>适合小红书、公众号或作品集中的方法论说明，重点是展示“从想法到发布”的过程。</p>
-          </div>
-        </div>
-        <ol class="flow-list">
-          <li><span>01</span>先写下原始问题，不要求完整。</li>
-          <li><span>02</span>让 AI 帮忙追问：这个问题还能从哪些角度看？</li>
-          <li><span>03</span>人工筛选最值得表达的角度。</li>
-          <li><span>04</span>拆成标题、封面、正文结构和结尾判断。</li>
-          <li><span>05</span>发布前做事实、语气、风险和平台适配复核。</li>
-        </ol>
-        <a class="inline-link" href="#sample-ai-writing-workflow">回到样稿 C ↑</a>
       </section>
 
       <section class="project-section">
-        <p class="section-kicker">MATERIAL PLACEHOLDERS</p>
-        <h2>待补充证据位</h2>
-        <div class="placeholder-grid">
-          <div class="placeholder"><strong>FIG. 01</strong><p>ChatGPT / Claude / DeepSeek 对比样稿</p></div>
-          <div class="placeholder"><strong>FIG. 02</strong><p>AI Agent 趋势分析样稿</p></div>
-          <div class="placeholder"><strong>FIG. 03</strong><p>AI 辅助写作流程截图</p></div>
-          <div class="placeholder"><strong>FIG. 04</strong><p>标题优化过程截图</p></div>
-          <div class="placeholder"><strong>FIG. 05</strong><p>图文排版草图</p></div>
+        <p class="section-kicker">TOOL ROLES</p>
+        <h2>四个工具分别承担什么角色</h2>
+        <div class="evidence-grid">
+          <article class="evidence-card">
+            <span>OBSIDIAN</span>
+            <h3>材料收集与长期记录</h3>
+            <p>整理思感集、项目笔记、网页结构草稿、求职信息和灵感片段。它更像我的个人资料库。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>CHATGPT</span>
+            <h3>结构讨论与文案判断</h3>
+            <p>帮助我梳理作品集主线、项目合并方式、页面文案语气和 Codex 修改指令。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>CODEX</span>
+            <h3>网页代码生成与修改</h3>
+            <p>根据明确指令生成 HTML / CSS 页面，调整项目结构、链接、锚点和页面内容。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>GITHUB</span>
+            <h3>版本管理与网页部署</h3>
+            <p>管理作品集仓库、页面文件、提交记录和 GitHub Pages 部署，也用于检查网页是否更新成功。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <p class="section-kicker">HUMAN + AI</p>
+        <h2>哪些由我判断，哪些由 AI 辅助</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>环节</th>
+              <th>由我判断</th>
+              <th>AI / 工具辅助</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>项目取舍</td>
+              <td>决定删除 AI 样稿栏目，把真实的作品集生产流程放到最后</td>
+              <td>辅助分析项目是否真实、是否适合放入主线</td>
+            </tr>
+            <tr>
+              <td>网站结构</td>
+              <td>决定以《思感集》作为底层系统，重新组织项目关系</td>
+              <td>辅助整理结构图、页面顺序和模块说明</td>
+            </tr>
+            <tr>
+              <td>文案语气</td>
+              <td>判断哪些表述太像讨好 HR，需要改得更平实</td>
+              <td>辅助重写文案和生成替换版本</td>
+            </tr>
+            <tr>
+              <td>网页代码</td>
+              <td>决定页面内容、链接逻辑和最终呈现</td>
+              <td>Codex 辅助生成 HTML / CSS 和修改页面结构</td>
+            </tr>
+            <tr>
+              <td>版本发布</td>
+              <td>确认哪些版本可以公开，哪些还需要继续改</td>
+              <td>GitHub 管理文件、提交、部署和链接检查</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="project-section dark">
+        <p class="section-kicker">ITERATION LOG</p>
+        <h2>这次网站经历过的关键修改</h2>
+        <ol class="flow-list">
+          <li><span>01</span>从“视觉作品陈列”改为“内容生成系统”。</li>
+          <li><span>02</span>将《思感集》提升为整个网站的底层材料来源。</li>
+          <li><span>03</span>将 IMXS、《坠落静默》、被单人合并为 AI 生成内容专题。</li>
+          <li><span>04</span>删除不真实或暂未完成的 AI 样稿主项目。</li>
+          <li><span>05</span>将 AI 协作流程移到网站最后，作为制作说明而不是前置主项目。</li>
+          <li><span>06</span>降低“讨好 HR”的文案语气，改为平实呈现我的真实工作方式。</li>
+          <li><span>07</span>增加文章、项目和子案例的可点击阅读路径。</li>
+          <li><span>08</span>接入三篇公众号原文链接，让读者可以直接阅读全文。</li>
+        </ol>
+      </section>
+
+      <section class="project-section">
+        <p class="section-kicker">OUTPUT</p>
+        <h2>这个栏目留下了什么</h2>
+        <div class="evidence-grid">
+          <article class="evidence-card">
+            <span>01</span>
+            <h3>一个完整作品集网站</h3>
+            <p>包括首页、思感集、AI 生成内容专题、展览体验、观察档案、AI 协作流程和简历页面。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>02</span>
+            <h3>一套内容结构判断</h3>
+            <p>明确哪些项目是主线，哪些项目应合并，哪些内容需要删除或降级。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>03</span>
+            <h3>一组可复用 Codex 指令</h3>
+            <p>把自然语言需求整理成可执行的网页修改任务，减少代码修改的混乱。</p>
+          </article>
+
+          <article class="evidence-card">
+            <span>04</span>
+            <h3>一次真实 AI 协作经验</h3>
+            <p>我不是只使用 AI 生成结果，而是在一个完整项目中使用 AI 辅助判断、整理、生成、修正和发布。</p>
+          </article>
         </div>
       </section>
 
       <section class="project-section proof-box">
-        <p class="section-kicker">SUMMARY</p>
+        <p class="section-kicker">NOTE</p>
         <h2>项目小结</h2>
         <p>
-          这部分留下的是我把长期写作习惯迁移到 AI 行业内容中的过程。AI 可以帮我整理资料、生成结构和补充角度，但选题是否成立、表达是否准确、语气是否适合平台，仍然需要人工判断。
+          这个栏目放在最后，是因为它不是作品集的主角，而是这个网站的制作说明。
+        </p>
+        <p>
+          AI 对我最有价值的地方不是替我完成作品，而是帮我更快地整理材料、看见结构问题、生成可修改的草稿，并把想法推进到可发布的页面。
+        </p>
+        <p>
+          但它并不替我决定方向。哪些内容要保留，哪些项目要合并，哪些文案显得过度包装，哪些表达更接近我自己，这些仍然需要我反复阅读和判断。
         </p>
       </section>
 
       <nav class="project-nav" aria-label="项目翻页">
-        <a href="./thinking-system.html">← 上一项目：思感集</a>
-        <a href="./ai-visual-production.html">下一项目：AI 生成内容专题 →</a>
+        <a href="./archive.html">← 上一项目：观察档案</a>
+        <a href="../index.html#projects">返回首页项目入口 →</a>
       </nav>
     </main>
 

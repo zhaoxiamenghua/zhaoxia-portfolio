@@ -582,6 +582,12 @@ blockquote {
   opacity: 0.72;
 }
 
+.subtle-link {
+  margin-left: 16px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
 .evidence-card .inline-link,
 .path-card .inline-link,
 .sample-card .inline-link {
@@ -995,6 +1001,12 @@ blockquote {
 
   .topic-list {
     columns: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .subtle-link {
+    margin-left: 0;
   }
 }
 
