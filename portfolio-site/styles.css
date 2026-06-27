@@ -533,13 +533,16 @@ blockquote {
   margin: 0;
   border: 1px solid var(--color-line);
   background: rgba(250, 248, 242, 0.5);
+  overflow: hidden;
+  cursor: zoom-in;
 }
 
 .evidence-media img {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
+  background: #f7f5ef;
 }
 
 .evidence-media.document img {
@@ -562,6 +565,67 @@ blockquote {
 
 .dark .evidence-media figcaption {
   color: rgba(250, 248, 242, 0.72);
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.image-lightbox[hidden] {
+  display: none;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(18, 16, 13, 0.94);
+  backdrop-filter: blur(8px);
+}
+
+.image-lightbox__close {
+  justify-self: end;
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid rgba(250, 248, 242, 0.32);
+  background: rgba(250, 248, 242, 0.08);
+  color: #fffdf8;
+  font-family: var(--sans);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-lightbox__stage {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+}
+
+.image-lightbox__stage img {
+  display: block;
+  width: auto;
+  max-width: min(96vw, 1440px);
+  height: auto;
+  max-height: 82vh;
+  object-fit: contain;
+  background: #fbf8f1;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
+}
+
+.image-lightbox__caption {
+  max-width: min(96vw, 980px);
+  margin: 0 auto;
+  color: rgba(250, 248, 242, 0.78);
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
 }
 
 .dark .evidence-placeholder {
@@ -720,7 +784,7 @@ blockquote {
 .evidence-card .inline-link,
 .path-card .inline-link,
 .sample-card .inline-link {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .version-gallery {
@@ -740,11 +804,13 @@ blockquote {
 }
 
 .version-sheet > .evidence-media img {
-  height: 100%;
+  height: auto;
   min-height: 220px;
-  aspect-ratio: auto;
-  object-fit: cover;
-  object-position: top;
+  max-height: 360px;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  object-position: top center;
+  background: #f7f5ef;
 }
 
 .version-sheet figcaption {
@@ -1107,6 +1173,23 @@ blockquote {
   color: var(--color-accent);
 }
 
+.appendix-log {
+  opacity: 0.92;
+}
+
+.appendix-log .flow-list {
+  font-size: 0.92rem;
+}
+
+.appendix-log li {
+  line-height: 1.75;
+}
+
+.evidence-note .placeholder-grid,
+.evidence-todo .placeholder-grid {
+  margin-top: 20px;
+}
+
 @media (max-width: 900px) {
   .site-header {
     grid-template-columns: 1fr;
@@ -1149,7 +1232,7 @@ blockquote {
     width: 100%;
     min-height: 220px;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .index-item > strong {
@@ -1211,6 +1294,16 @@ blockquote {
   .sample-card .inline-link,
   .article-card .inline-link {
     margin-right: 14px;
+  }
+
+  .image-lightbox {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .image-lightbox__stage img {
+    max-width: 96vw;
+    max-height: 78vh;
   }
 }
 
