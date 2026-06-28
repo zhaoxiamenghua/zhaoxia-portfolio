@@ -308,6 +308,10 @@ dd {
   border-top: 1px solid var(--color-line-dark);
 }
 
+.cover-copy .cover-actions {
+  margin-top: 28px;
+}
+
 .archive-link,
 .paper-button {
   display: inline-flex;
@@ -325,6 +329,12 @@ dd {
 .index-item:hover > strong,
 .site-footer a:hover {
   opacity: 0.64;
+}
+
+.archive-link.primary-link {
+  padding-inline: 14px;
+  border: 1px solid currentColor;
+  background: rgba(250, 248, 242, 0.08);
 }
 
 .section-heading {

@@ -179,6 +179,36 @@ li {
   border-top: 0;
 }
 
+.resume-evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  font-size: 0.92rem;
+}
+
+.resume-evidence-table th,
+.resume-evidence-table td {
+  border-top: 1px solid rgba(40, 38, 34, 0.18);
+  padding: 12px 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.resume-evidence-table th {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.resume-evidence-table td:first-child {
+  width: 20%;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.resume-evidence-table td:nth-child(2) {
+  width: 34%;
+}
+
 .item {
   padding: 18px 0 18px;
   border-bottom: 1px solid rgba(24, 22, 18, 0.1);
@@ -315,6 +345,12 @@ h4 {
   .contact-index {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .resume-evidence-table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
   }
 }
 
