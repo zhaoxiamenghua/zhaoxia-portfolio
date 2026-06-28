@@ -407,7 +407,7 @@ blockquote {
 
 .index-item {
   display: grid;
-  grid-template-columns: 56px minmax(0, 1fr) 170px auto;
+  grid-template-columns: 56px minmax(0, 1fr) clamp(190px, 14vw, 224px) clamp(150px, 13vw, 190px);
   gap: 24px;
   align-items: center;
   padding: 22px 0;
@@ -445,12 +445,24 @@ blockquote {
 
 .index-item img,
 .index-item > .evidence-placeholder {
-  width: 170px;
+  width: 100%;
   min-height: 126px;
 }
 
+.index-item > .evidence-media {
+  width: 100%;
+  min-width: 0;
+  justify-self: stretch;
+}
+
+.index-item > .evidence-media img {
+  height: clamp(142px, 10.5vw, 168px);
+  min-height: 0;
+  aspect-ratio: auto;
+}
+
 .index-item > strong {
-  justify-self: end;
+  justify-self: start;
   font-family: var(--sans);
   font-size: 13px;
   white-space: nowrap;
@@ -1220,6 +1232,7 @@ body.lightbox-open {
   }
 
   .index-item > div,
+  .index-item > .evidence-media,
   .index-item img,
   .index-item > .evidence-placeholder,
   .index-item > strong {
@@ -1230,6 +1243,7 @@ body.lightbox-open {
   .index-item img,
   .index-item > .evidence-placeholder {
     width: 100%;
+    height: auto;
     min-height: 220px;
     aspect-ratio: 4 / 3;
     object-fit: contain;
