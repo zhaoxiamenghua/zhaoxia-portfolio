@@ -567,6 +567,17 @@ blockquote {
   background: #f7f5ef;
 }
 
+.evidence-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 7 / 3;
+  background: #0d0d0d;
+}
+
+.video-evidence {
+  cursor: default;
+}
+
 .evidence-media.document img {
   object-fit: contain;
   background: #f7f5ef;
